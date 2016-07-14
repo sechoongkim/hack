@@ -1,0 +1,6 @@
+{
+    "googleClientId" : "AIzaSyD1gikRGRmF351yJ2D1TbJ9AIqC4mV8pIk",
+    "googleClientSecret" : "z1mKnO7WD1mVMBZqXP3OsULR",
+    "googleCallbackUrl" : "/auth/google/callback"
+}
+}
