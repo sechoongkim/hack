@@ -3,7 +3,7 @@
 var passport = require('passport');
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var User = require('../api/users/user.model');
-var config = require('config.json');
+var config = require('../../config.json');
 
 module.exports = new GoogleStrategy({
   clientID: config.googleClientId,

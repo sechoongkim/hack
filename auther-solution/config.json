@@ -3,4 +3,3 @@
     "googleClientSecret" : "GST6VQnVmhx1YIB1vDXXB3PF",
     "googleCallbackUrl" : "/auth/google/callback"
 }
-}
