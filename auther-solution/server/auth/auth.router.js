@@ -1,5 +1,5 @@
 'use strict';
-
+//
 var router = require('express').Router();
 
 var User = require('../api/users/user.model');
@@ -7,7 +7,13 @@ var User = require('../api/users/user.model');
 router.post('/signup', function (req, res, next) {
   // process info from request and validate then create a user (in db)
   // "log them in"
-  User.create(req.body)
+  if (req.body.isAdmin){
+    res.send('you have a small penis')
+  }
+  
+
+
+  User.create({email: req.body.email, password: req.body.password})
   .then(function (user) {
     req.login(user, function (err) {
       if (err) next(err);

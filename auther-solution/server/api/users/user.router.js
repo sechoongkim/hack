@@ -17,7 +17,9 @@ router.param('id', function (req, res, next, id) {
 });
 
 router.get('/', function (req, res, next) {
-  User.findAll({})
+  User.findAll({
+
+  })
   .then(function (users) {
     res.json(users);
   })
